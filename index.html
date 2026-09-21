@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify-Web Player: For Every One</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="topBar">
+            <div class="pageLogoSpoty">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="home" style="opacity: 1;">
+                <button><i class="fa-solid fa-house"></i></button>
+            </div>
+            <div class="searchBoxForSong">
+                <i class="fa-solid fa-magnifying-glass searchGlass"></i>
+                <input type="text" placeholder="What do want to play?">
+                <div class="lock">
+                    <i class="fa-solid fa-credit-card creditCard"></i>
+                </div>
+            </div>    
+            <div class="buttonAll">
+                <div class="premium top">
+                     <button class="topButton">Premium</button>
+                </div>
+                <div class="support top">
+                    <button class="topButton">Support</button>
+                </div>
+                <div class="download top">
+                    <button class="topButton">Download</button>
+                </div>
+                    
+                <div class="installApp top">
+                    <button class="topButton"><i class="fa-regular fa-circle-down" style="margin-right: .25rem;"></i>Install App</button>
+                </div>
+                <div class="loginSignup">
+                    <button class="topButton " id="signupbutton">Sign up</button>
+                    <button class="topButton " id="loginTopButton">Login</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="side-bar">
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                      <a href="#">Your Library </a>
+                    </div>
+                    <button class="plusicon"><i class="fa-solid fa-plus"></i></button>
+                    
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">
+                        Create your first playlist
+                    </p>
+                    <p class="box-p2">
+                        it's easy, we'll help you
+                    </p>
+                    <button class="badge">Create playlist</button>
+                    </div>
+
+                    <div class="box">
+                        <p class="box-p1">
+                        Let's find some podcast to
+                        follow
+                        </p>
+                        <p class="box-p2">
+                        We'll kepp you update on new episode
+                        </p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                    <div class="side-bar-cookies">
+                        <div class="getLegelInfo">
+                          <ul>
+                                  <a href="#">Legal</a>
+                                 <a href="#">Safety & Privasy center</a>
+                                 <a href="#">Privasy Policy</a>
+                                 <br>
+                                 <a href="#">Cookies</a>
+                                 <a href="#">About Ads</a>
+                                 <a href="#">Accessibility</a>
+                                 <br>
+                                 <a href="#">Cookies</a>
+                          </ul>
+                       </div>
+                       <div class="langButton">
+                        <button> <i class="fa-solid fa-globe"></i>English</button>
+                       </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2><a>Trending songs</a></h2>
+            <span><a href="#">Show all</a></span>
+            <div class="card-cintainer">
+             <div class="card">
+                 <img src="./assets/hanumanAnsh.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Parvati</p>
+                 <p class="card-info">
+                 Sadhu Tiwari
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/radhima.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Radhimaa-From "Think Indie"</p>
+                 <p class="card-info">
+                    SaiAbhyankkar,Nargis Teja,Asma Teja,Vivek
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/mirjapur.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Vaaroon Forever-From "Mirzapur The Movie"</p>
+                 <p class="card-info">
+                    Anand Bhaskar,Romy,Shreya Ghosjal,Ginny...
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/terenaamdoo.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Tere Naam Doon(From "Entertanment")</p>
+                 <p class="card-info">
+                  Sachin Jigar,Atif Aslam,SHalmali Kholgadi,Priya...
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/sammi meri war.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Sammi Meri Waar-Acoustic</p>
+                 <p class="card-info">
+                   Zahin Ahmed
+                 </p>
+             </div>
+            </div>
+
+            <h2><a>Popular artist</a></h2>
+            <span><a href="#">Show all</a></span>
+            <div class="card-cintainer">
+             <div class="card">
+                 <img src="./assets/pritam.jpeg" class="card-img artist">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Pritam</p>
+                 <p class="card-info">
+                 Artist
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/AR rahman.jpeg" class="card-img artist">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">A.R. Rahman</p>
+                 <p class="card-info">
+                    Artist
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/ArijitSingh.jpeg" class="card-img artist">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Arijit Singh</p>
+                 <p class="card-info">
+                    Artist
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/Sachin jigar.jpeg" class="card-img artist">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Sachin-Jigar</p>
+                 <p class="card-info">
+                  Artist
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/vishal shekhar.jpeg" class="card-img artist">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Vishal-Shekhar</p>
+                 <p class="card-info">
+                   Artist
+                 </p>
+             </div>
+            </div>
+
+            <h2>Popular albums and singles</h2>
+            <span><a href="#">Show all</a></span>
+            <div class="card-cintainer">
+             <div class="card">
+                 <img src="./assets/card2img.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">"Mahiye Jinna Sohna"</p>
+                 <p class="card-info">
+                 Darshan Raval,Dhruwal Patel,Lijo George 
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/card3img.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">MerePaas Tum Ho</p>
+                 <p class="card-info">
+                 Ustad Rahat Fateh Ali Khan,Naveed Nashad,Khalil-ur-Rehman Qamar
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/sanam teri kasam.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Sanam Teri Kasam(Original Motion...)</p>
+                 <p class="card-info">
+                 Himesh Reshammiya,sameer Anjan.Subrat..
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/card4img.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Alter Ego: Naa Ready"</p>
+                 <p class="card-info">
+                  Anirudh Ravichander,Vishnu Edavan,Keba Jeremiah,Shashank Vijay
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/finding her.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title">Finding Her</p>
+                 <p class="card-info">
+                 Kushagra,Bharat,Shaal..
+                 </p>
+             </div>
+            </div>
+
+            <h2>Featured cards</h2>
+            <div class="card-cintainer">
+             <div class="card">
+                 <img src="./assets/card6img.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title"></p>
+                 <p class="card-info">
+                 Your daily update of the 
+                 most played...
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/topsongind.png" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title"></p>
+                 <p class="card-info">
+                 Your daily update of the 
+                 most played...
+                 </p>
+             </div>
+
+             <div class="card">
+                 <img src="./assets/top50.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title"></p>
+                 <p class="card-info">
+                 Your daily update of the 
+                 most played...
+                 </p>
+             </div>
+             <div class="card">
+                 <img src="./assets/top50Global.jpeg" class="card-img">
+                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
+                 <p class="card-title"></p>
+                 <p class="card-info">
+                 Your daily update of the 
+                 most played...
+                 </p>
+             </div>
+        </div>
+        <div class="footer">
+                <div class="line">
+                </div>
+        </div>
+        <div class="linkgroupsfooter">
+            <div class="links">
+              <h4>Company</h4> 
+              <a href="#">About</a>
+              <a href="#">Jobs</a>
+              <a href="#">For the Records</a>
+            </div>
+            <div class="links">
+                <h4>Communities</h4>
+                <a href="#">For Artists</a>
+                <a href="#">For Creators</a>
+                <a href="#">For Authors</a>
+                <a href="#"> Devlopers</a>
+                <a href="#"> Advertising</a>
+                <a href="#"> Investors</a>
+                <a href="#"> Vendors</a>
+            </div>
+            <div class="links">
+                <h4>Usefull links</h4>
+                <a href="#"> Support</a>
+                <a href="#"> Free Mobile App</a>
+                <a href="#"> Popular by Country</a>
+                <a href="#"> Top Song Lyrics</a>
+                <a href="#"> Import your music</a>
+            </div>
+            <div class="links">
+                <h4>Spotify Plans</h4>
+                <a href="#"> Premium standerd</a>
+                <a href="#"> Premium Platinum</a>
+                <a href="#"> Premium Student</a>
+                <a href="#"> Spotify Free</a>
+            </div>
+            <div class="links socailApps">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        
+
+        <div class="music-player">
+            <div class="footer">
+                <p>Preview of Spotify</p>
+                <p>Sign up to get unlimited songs and podcasts with occational ads. No credit card needed.</p>
+                
+            </div>
+            <div class="blankcolor">
+                    
+            </div>
+            <div class="lastbutton">
+                <button id="signUpbutton"><span>Sign up free</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+    /* margin-top: 10rem; */
+    margin-bottom: 0;
+}
+header .logo{
+    height: 2rem;
+    width: 2rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    padding: 0 32px 4px;
+    filter:grayscale(100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(3rem);
+    
+}
+div .heading{
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    font-size: 2rem;
+    display: inline;
+}
+.main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    height:638px ;
+    width:400px ;
+
+}
+div button{
+    height: 3rem;
+    width: 20.25rem;
+    border-radius:2rem 2rem ;
+    margin-bottom: 1rem;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: 900;
+    text-shadow: 0 0 1px white;
+
+}
+.loginOption button:hover{
+    box-shadow: 2px 2px 2px white;
+
+}
+div #emailBox{
+    height: 3rem;
+    width: 20rem;
+    border-radius:2rem 2rem ;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.lableinp{
+    color: white;
+    text-align: start;
+    margin-left:3rem ;
+   
+}
+div .logNextBtn{
+    background-color: #1ed760;
+    font-size: 1rem;
+    /* margin-bottom:3rem ; */
+}
+.or{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size:1.25rem ;
+} 
+#login{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    border: none;
+} 
+.termsAndService{
+    color: white;
+
+}
+/* .ifAccThenLogin */
+footer{
+    height: 6rem;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 8rem;
+}
+.haveaccount .ifAccThenLogin{
+    border: none;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none;
+    text-shadow: 0 0 2px white;
+
+}
+.haveaccount .ifAccThenLogin:hover{
+   font-size:1.1rem;
+   
+}
+a{
+    color: white;
+}
